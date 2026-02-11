@@ -7,6 +7,12 @@ const outPath = path.resolve('index.html');
 
 const EXCLUDE = new Set(['my-binance','coke-moltbook']);
 
+// Manual screenshots captured from live sites (one per project)
+const OVERRIDE_SHOTS = {
+  'coke-blog': 'images/coke-blog/blog.png',
+  'coke-comic': 'images/coke-comic/read.png',
+};
+
 const repos = JSON.parse(fs.readFileSync(dataPath,'utf8'))
   .filter(r=>!EXCLUDE.has(r.name));
 
@@ -23,6 +29,8 @@ function hasImageExt(p){
 }
 
 function pickScreenshot(r){
+  if(OVERRIDE_SHOTS[r.name]) return OVERRIDE_SHOTS[r.name];
+
   const imgs = (r.images||[])
     .map(i=>({
       ...i,
@@ -49,7 +57,7 @@ withShot.sort((a,b)=>{
 });
 
 // pick top N cards for the grid
-const cards = withShot.slice(0, 12);
+const cards = withShot.slice(0, 15);
 
 function langBadge(lang){
   if(!lang) return '';
@@ -100,6 +108,10 @@ function cardHtml({r, shot}){
 }
 
 let tpl = fs.readFileSync(templatePath,'utf8');
+
+// Year range copy fixes
+tpl = tpl.replaceAll('2024-2025回顾', '2025-2026回顾');
+tpl = tpl.replaceAll('Selection of key projects from 2024', 'Selection of key projects from 2025-2026');
 
 // Update numbers in stat cards + hero copy
 const totalRepos = repos.length;
