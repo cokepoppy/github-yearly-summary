@@ -10,11 +10,30 @@ const EXCLUDE = new Set(['my-binance','coke-moltbook']);
 const repos = JSON.parse(fs.readFileSync(dataPath,'utf8'))
   .filter(r=>!EXCLUDE.has(r.name));
 
+function normalizeAssetPath(p){
+  if(!p) return null;
+  // repos_enriched.json was generated before we renamed underscore-prefixed images in the Pages repo.
+  // GitHub Pages/Jekyll ignores files starting with '_' so we renamed them by stripping the leading underscores.
+  // Normalize paths accordingly.
+  return p.replace(/\/_([^/]+)/g, (_m, name)=>`/${name}`); // '/_xxx' -> '/xxx'
+}
+
+function hasImageExt(p){
+  return /\.(png|jpg|jpeg|webp|gif|svg)$/i.test(p||'');
+}
+
 function pickScreenshot(r){
-  const imgs = (r.images||[]).filter(i=>i.file);
+  const imgs = (r.images||[])
+    .map(i=>({
+      ...i,
+      file: normalizeAssetPath(i.file)
+    }))
+    .filter(i=>i.file && hasImageExt(i.file));
+
   if(!imgs.length) return null;
+
   // Prefer 'home'/'main'/'demo'/'01-world' like screenshots
-  const preferred = imgs.find(i=>/home|main|demo|world|01-|index|preview|trade/i.test(i.file));
+  const preferred = imgs.find(i=>/home|main|demo|world|01-|index|preview|trade|dashboard/i.test(i.file));
   return (preferred||imgs[0]).file.replace(/^home2025\/github-summary\//,'');
 }
 
