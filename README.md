@@ -77,19 +77,19 @@
 - Topics：`finance` `quant` `quantitative-finance` `trade` `trading-algorithms` `trading-strategies` `vibe-coding` `vue3`
 
 截图：
-- ![](images/my-quant/_E9_A6_96_E9_A1_B5.png)
-- ![](images/my-quant/_E7_AD_96_E7_95_A5_E5_88_97_E8_A1_A8.png)
-- ![](images/my-quant/_E7_AD_96_E7_95_A5_E8_AF_A6_E6_83_85.png)
-- ![](images/my-quant/_E4_BA_A4_E6_98_93_E9_9D_A2_E6_9D_BF.png)
-- ![](images/my-quant/_E8_AE_A2_E5_8D_95_E7_AE_A1_E7_90_86.png)
-- ![](images/my-quant/_E6_8C_81_E4_BB_93_E7_AE_A1_E7_90_86.png)
-- ![](images/my-quant/_E8_B4_A6_E6_88_B7_E7_AE_A1_E7_90_86.png)
-- ![](images/my-quant/_E5_B8_82_E5_9C_BA_E6_95_B0_E6_8D_AE.png)
-- ![](images/my-quant/_E6_95_B0_E6_8D_AE_E5_AF_BC_E5_85_A5.png)
-- ![](images/my-quant/_E5_9B_9E_E6_B5_8B_E8_AE_BE_E7_BD_AE.png)
-- ![](images/my-quant/_E5_9B_9E_E6_B5_8B_E7_BB_93_E6_9E_9C.png)
-- ![](images/my-quant/_E5_8F_82_E6_95_B0_E4_BC_98_E5_8C_96.png)
-- ![](images/my-quant/_E7_94_A8_E6_88_B7_E7_AE_A1_E7_90_86.png)
+- ![](images/my-quant/E9_A6_96_E9_A1_B5.png)
+- ![](images/my-quant/E7_AD_96_E7_95_A5_E5_88_97_E8_A1_A8.png)
+- ![](images/my-quant/E7_AD_96_E7_95_A5_E8_AF_A6_E6_83_85.png)
+- ![](images/my-quant/E4_BA_A4_E6_98_93_E9_9D_A2_E6_9D_BF.png)
+- ![](images/my-quant/E8_AE_A2_E5_8D_95_E7_AE_A1_E7_90_86.png)
+- ![](images/my-quant/E6_8C_81_E4_BB_93_E7_AE_A1_E7_90_86.png)
+- ![](images/my-quant/E8_B4_A6_E6_88_B7_E7_AE_A1_E7_90_86.png)
+- ![](images/my-quant/E5_B8_82_E5_9C_BA_E6_95_B0_E6_8D_AE.png)
+- ![](images/my-quant/E6_95_B0_E6_8D_AE_E5_AF_BC_E5_85_A5.png)
+- ![](images/my-quant/E5_9B_9E_E6_B5_8B_E8_AE_BE_E7_BD_AE.png)
+- ![](images/my-quant/E5_9B_9E_E6_B5_8B_E7_BB_93_E6_9E_9C.png)
+- ![](images/my-quant/E5_8F_82_E6_95_B0_E4_BC_98_E5_8C_96.png)
+- ![](images/my-quant/E7_94_A8_E6_88_B7_E7_AE_A1_E7_90_86.png)
 
 
 ### my-twitter
@@ -124,16 +124,16 @@
 - Stars：1  · Forks：0
 
 截图：
-- ![](images/coke-efront-v5/_E9_A6_96_E9_A1_B5.png)
-- ![](images/coke-efront-v5/_E5_9F_BA_E9_87_91_E5_88_97_E8_A1_A8.png)
-- ![](images/coke-efront-v5/_E6_8A_95_E8_B5_84_E5_88_97_E8_A1_A8.png)
-- ![](images/coke-efront-v5/_E6_8A_95_E8_B5_84_E8_80_85_E7_AE_A1_E7_90_86.png)
-- ![](images/coke-efront-v5/_E4_BC_B0_E7_AE_97_E7_AE_A1_E7_90_86.png)
-- ![](images/coke-efront-v5/_E4_BA_A4_E6_98_93_E7_AE_A1_E7_90_86.png)
-- ![](images/coke-efront-v5/_E7_BB_A9_E6_95_88_E6_8A_A5_E5_91_8A.png)
-- ![](images/coke-efront-v5/_E6_96_87_E6_A1_A3_E7_AE_A1_E7_90_86.png)
-- ![](images/coke-efront-v5/_E6_97_A5_E5_8E_86.png)
-- ![](images/coke-efront-v5/_E4_B8_AA_E4_BA_BA_E4_B8_AD_E5_BF_83.png)
+- ![](images/coke-efront-v5/E9_A6_96_E9_A1_B5.png)
+- ![](images/coke-efront-v5/E5_9F_BA_E9_87_91_E5_88_97_E8_A1_A8.png)
+- ![](images/coke-efront-v5/E6_8A_95_E8_B5_84_E5_88_97_E8_A1_A8.png)
+- ![](images/coke-efront-v5/E6_8A_95_E8_B5_84_E8_80_85_E7_AE_A1_E7_90_86.png)
+- ![](images/coke-efront-v5/E4_BC_B0_E7_AE_97_E7_AE_A1_E7_90_86.png)
+- ![](images/coke-efront-v5/E4_BA_A4_E6_98_93_E7_AE_A1_E7_90_86.png)
+- ![](images/coke-efront-v5/E7_BB_A9_E6_95_88_E6_8A_A5_E5_91_8A.png)
+- ![](images/coke-efront-v5/E6_96_87_E6_A1_A3_E7_AE_A1_E7_90_86.png)
+- ![](images/coke-efront-v5/E6_97_A5_E5_8E_86.png)
+- ![](images/coke-efront-v5/E4_B8_AA_E4_BA_BA_E4_B8_AD_E5_BF_83.png)
 
 ### coke-nof1
 - 简介：nof1.ai 官网复刻
