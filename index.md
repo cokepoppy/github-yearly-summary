@@ -61,7 +61,7 @@ title: "2025 · GitHub 年终总结（cokepoppy）"
 ## 年度主线（归类）
 
 <div class="grid">
-  <div class="card">
+  <div class="card" markdown="1">
 
 ### 1) 量化 / 交易系统与工具链
 
@@ -69,7 +69,7 @@ title: "2025 · GitHub 年终总结（cokepoppy）"
 - 周边是若干交易相关小项目：**trade-app**、**coke-binance**、**coke-hyperliquid**。
 
   </div>
-  <div class="card">
+  <div class="card" markdown="1">
 
 ### 2) 前端 / 网站复刻与页面工程
 
@@ -78,7 +78,7 @@ title: "2025 · GitHub 年终总结（cokepoppy）"
 - **my-twitter**：Twitter/X 风格页面与交互练习。
 
   </div>
-  <div class="card">
+  <div class="card" markdown="1">
 
 ### 3) Agent / 工具化 / 自动化（延伸到 2026）
 
@@ -171,7 +171,7 @@ title: "2025 · GitHub 年终总结（cokepoppy）"
 ## 2026 年补充（含截图）
 
 <div class="grid">
-  <div class="card">
+  <div class="card" markdown="1">
 
 ### 2026 总览
 
@@ -180,7 +180,7 @@ title: "2025 · GitHub 年终总结（cokepoppy）"
 - 2026 新建仓库当前 Stars 合计：**3**
 
   </div>
-  <div class="card">
+  <div class="card" markdown="1">
 
 ### 2026 代表项目
 
