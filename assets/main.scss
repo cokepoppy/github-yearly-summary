@@ -3,96 +3,52 @@
 
 @import "minima";
 
-:root {
-  --card-bg: rgba(0,0,0,0.03);
-  --card-border: rgba(0,0,0,0.08);
-}
-
-.hero {
-  padding: 1rem 1.25rem;
-  border: 1px solid var(--card-border);
-  border-radius: 14px;
-  background: var(--card-bg);
-}
-
-.hero h1 { margin-top: 0.2rem; }
-
-.badges {
-  margin-top: .75rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: .5rem;
-}
-
-.badge {
-  font-size: .9rem;
-  padding: .2rem .6rem;
-  border-radius: 999px;
-  border: 1px solid var(--card-border);
-  background: white;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 12px;
-}
-
-.card {
-  grid-column: span 6;
-  border: 1px solid var(--card-border);
-  border-radius: 14px;
-  padding: 1rem 1.1rem;
-  background: white;
-}
-
-@media (max-width: 900px) {
-  .card { grid-column: span 12; }
-}
-
-.card h3 { margin-top: 0; }
-
-.kv {
-  display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: .35rem 1rem;
-}
-
-.kv div.key { color: rgba(0,0,0,0.65); }
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
-
-@media (max-width: 900px) {
-  .gallery { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 520px) {
-  .gallery { grid-template-columns: 1fr; }
-}
-
-.gallery img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px;
-  border: 1px solid var(--card-border);
-  background: #fff;
+// Make inline screenshots look like a clean gallery without complex markdown-in-HTML.
+img {
+  max-width: 100%;
 }
 
 details {
-  border: 1px solid var(--card-border);
+  margin: 0.6rem 0 1.2rem;
+  padding: .6rem .8rem;
+  border: 1px solid rgba(0,0,0,0.08);
   border-radius: 12px;
-  padding: .7rem .9rem;
   background: rgba(0,0,0,0.015);
 }
 
 details summary {
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 700;
 }
 
-.small { font-size: .92rem; color: rgba(0,0,0,0.7); }
+details img {
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: #fff;
+}
+
+// Basic responsive “auto-grid” for images inside details
+// (works because the browser lays inline images; we turn them into grid items)
+details {
+  position: relative;
+}
+
+details[open] {
+  overflow: hidden;
+}
+
+details[open] > img {
+  width: calc(33.333% - 10px);
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+@media (max-width: 900px) {
+  details[open] > img { width: calc(50% - 10px); }
+}
+
+@media (max-width: 520px) {
+  details[open] > img { width: 100%; margin-right: 0; }
+}
