@@ -13,6 +13,12 @@ const OVERRIDE_SHOTS = {
   'coke-comic': 'images/coke-comic/read.png',
 };
 
+// Manual description overrides (repo description can be empty on GitHub)
+const OVERRIDE_DESC = {
+  'coke-blog': '一个现代化的全栈博客系统（Claude 风格设计，基于 Gemini Canvas 原型开发）。',
+  'coke-comic': '一个漫画网站 / 漫画阅读器（在线阅读与浏览体验）。',
+};
+
 const repos = JSON.parse(fs.readFileSync(dataPath,'utf8'))
   .filter(r=>!EXCLUDE.has(r.name));
 
@@ -82,7 +88,8 @@ function escapeHtml(s){
 
 function cardHtml({r, shot}){
   const stars = r.stargazers_count||0;
-  const desc = escapeHtml(r.description || '（无描述）');
+  const rawDesc = OVERRIDE_DESC[r.name] || r.description || '（无描述）';
+  const desc = escapeHtml(rawDesc);
   const badges = `${langBadge(r.language)}${topicBadges(r.topics)}`;
   const imgSrc = shot.startsWith('images/') ? shot : `images/${shot}`;
   return `
